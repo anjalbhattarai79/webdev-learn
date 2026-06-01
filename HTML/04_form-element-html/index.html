@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+<body>
+    <h1>HTML form </h1>
+
+    <h2>Login Form</h2>
+    <form action="/login" method="post">
+        <!-- label FOR and input ID is connected -->
+        <p><div> <label for="name">Your Name</label></div> <!-- Div used to use block instead so that line breaks like -->
+        <input id="name" name="name" placeholder="Enter Your Name"></p>
+       
+        <p><div> <label for="email">Email</label></div>
+        <input id="email" name="email" type="text" placeholder="Enter Your emailID"></p>
+
+        <p><div> <label for="mobile">Phone Number</label></div>
+        <input id="mobile" name="number" type="text" placeholder="Enter Your Phone number"></p>
+       
+        <p><div> <label for="password">Enter your password</label></div> 
+        <input id="password" name="password" type="password" placeholder="Enter the password"></p>
+
+        <button type="reset">Reset Data</button>
+        <button type="submit">SUbmit</button>
+               
+           
+    </form>
+
+    <div hidden>
+        <form action="/">                                <!-- Can be  made div as well but won't work like form.-->
+            <input type="text" name="Search">   
+        </form>
+        
+        <h3>Youtube Search</h3>
+    
+        <form action="https://www.youtube.com/results">   
+            <input type="text" name="search_query">   
+            <button>Search on youtube</button>
+        </form  >
+       
+        <h3>Flipkart Search</h3>
+        
+        <form action="https://www.flipkart.com/results">   
+            <label for="flipkart">flipkart search</label>   <!-- Helps to focus; which form to fill up-->
+            <input id="flipkart" type="text" name="q">                 <!-- TYPE = PASSWORD MAKES black dots to make it visible; convert PASSWORD  into TEXT-->
+            <button>Search on Flipkart</button> 
+        </form>
+       
+        <h3>My Search</h3>
+        
+        <form action="/">   
+            <input type="text" placeholder="enter your name " required> 
+            <input type="password " placeholder="Enter your password" minlength="6" maxlength="10">
+            <input type="number" min=" 100" max="200">
+            <input type="email"> 
+           <!-- 
+            <input type="date">
+            <input type="file">
+            <input type="hidden"> 
+            <input type="  tel"> 
+            -->
+    
+    
+            <button>submit</button> 
+    
+        </form>
+    </div>
+    
+
+</body>
+</html>
+
+<!-- 
+ctrl+D after selection a word for selecting same next word
+ctrl+U for undo
+-->
