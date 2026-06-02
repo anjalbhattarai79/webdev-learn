@@ -1,0 +1,67 @@
+/* Tag Selector */
+li{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+/* Class Selector */
+
+.html {
+    color: #DE4B25;
+}
+.css{
+    color: #1477BA;
+}
+.js{
+    color: #E8A72E;
+}
+.react{
+    color: #1477BA;
+}
+.tw{
+    color: #67BBFB;
+}
+
+/* Id Selector */
+
+/* #html{
+    font-size: 32px;
+}
+#css{
+    font-size: 32px;
+}
+#js{
+    font-size: 32px;
+}
+#react{
+    font-size: 32px;
+}
+#tw{
+    font-size: 32px;
+} */
+
+/* Attribute Selector */
+ [class]{
+    background-color: green;
+ }
+ [anjal="coder"]{
+    background-color: red;
+ }
+
+/* Multiple Selector */
+ .html, .css, .js, .react, .tw{
+    font-style: italic;
+ }
+
+/* Descender selector */
+ ul p{ 
+    background-color: green;
+ }
+
+ /* Pseudo-class Selector */
+ h1:hover {
+    color: blue;
+ }
+ [anjal]:hover {
+    color: yellow;
+ }
