@@ -1,0 +1,35 @@
+
+#html.html{
+    background-color: deeppink;
+}
+#html{
+    background-color: darkmagenta;
+}
+
+
+.html.html.html.html.html.html.html.html.html.html.html{    
+    /* don't become greater then #html */
+    background-color: cadetblue;
+}
+
+li{
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.css.bold{
+    font-weight: bold;
+}
+
+
+li{
+    background-color: black !important;
+}
+li{
+    background-color: blue;
+}
+ 
+.html{
+    background-color: burlywood;
+}
+

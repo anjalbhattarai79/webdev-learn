@@ -1,0 +1,21 @@
+/* #html {
+    background-color: yellowgreen;
+}
+
+body{
+    color: green;
+}
+ul{
+    font-size: 47;
+    font-weight: 900;
+    font-style: italic;
+    font-family: cursive;
+
+    is inherited to all li
+}
+button{
+    font-family: inherit;
+}
+form{
+    font-size: inherit;
+} */
