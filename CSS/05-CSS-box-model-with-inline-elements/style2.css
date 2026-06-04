@@ -1,0 +1,59 @@
+/*  - height and width don't work for INLINE
+    - for padding, pushes L-R but not T-B, overshadows for T-B
+    - same for border, margin and outline as well
+
+    BUT for REPLACED INLINE elements-- img, video, iframe[yt video on our website] --> 
+     its width SAME as source other properties of box model works similar for block element.
+    
+*/
+
+body {
+    margin: 0;
+}
+
+.span{
+
+    /* display: block;              */
+                                        /* Converts : Inline<----> BLOCK
+                                         [block element don't other any other elements come on ther line; although they don't occupy full width;] */
+    display: inline-block;              /*Acts block but support multiple element is same line.*/
+    background-color: pink;
+    width: 300px;                    /* by default, it's 100%; */
+    height: 200px;
+    padding: 25px;
+    border: 10px green;
+    margin: 20px;
+               /* Don't change the set width pixel by added PADDLE and BORDER. */
+    
+}
+
+img {
+    width: 500px;
+}
+
+iframe {
+    width: 500px;
+    height: 450px;
+}
+
+video {
+    width: 500px;
+}
+/* 
+    Inline elements can be:
+     REPLACED inline elements-- img, video, iframe[yt video on our website] --> 
+     its width SAME as source by default but can be change ; 
+    acts like inline-block by default ie. they push instead of overlapping
+        for image give either WIDTH OR  height only; other will be arranged automatically;
+        for video; automatically 
+        for iframe ; setting one of width or height don't set other automatically.
+     and
+      NON- REPLACED inline elements-- anchor, span, bold --> its width is AUTO by defaut
+*/
+
+/* DIsplay property -- 
+    1. display - block
+    2. display - inline 
+    3. display - inline block
+    4. display - none [ like hidden attribute from HTML; but specificity is higher for from CSS.]
+*/

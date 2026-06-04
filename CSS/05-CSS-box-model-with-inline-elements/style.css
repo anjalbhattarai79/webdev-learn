@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    /* px not needed to write */
+}
+
+
+p {
+    background-color: greenyellow;
+    width: 300px;                    /* by default, it's 100% for blokc; */
+    height: 100px;
+    padding: 25px;
+    border: 10px green;
+    margin: 25px;
+    box-sizing: border-box;            /* Don't change the set width pixel by added PADDLE and BORDER. */
+    
+}
+
+.html {
+    background-color: cadetblue;
+    width: 300px;                       /* inline element has AUTO px value for HEIGHT and WIDTH by default
+                                         [ Block elements takes shape of rectangle but not inline elements ]*/   
+    height: 200px;
+    /* height and widht don't work for inline.*/      
+    padding: 25px;                      /* L-R : no change ; T-B px increases overshadowing other but not PUSH other like BLOCK element does. */      
+    border: 10px solid green;               /* [ same behaviour like paddle] */
+    margin: 20px;
+
+    outline: 13px solid pink;
+
+       
+}
+
+div {
+    background-color: yellowgreen;
+    padding: 25px;
+}
+
