@@ -1,0 +1,44 @@
+html {
+    height: 1000px;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    background-color: green;
+    width: 400px;
+    /* height: 500px; */
+    height:75%;
+    /* padding: 25px; */
+    padding: 10%;
+    box-sizing: border-box;
+    /* content box ma pixels add hudai aanchha */
+
+    font-size: 32px;
+}
+
+
+
+
+
+.box {
+    background-color: chartreuse;
+    max-width: 50%;
+    /* height given in percentage don't work unless parent has absolute value; */
+    padding: 10%;
+    /* padding calculated more Parent's " CONTENT-WIDTH " */
+    /* pecentage in MARGIN alson works like same  */
+
+    /* NEVER GIVE PADDING AND MARGIN IN PERCENTAGR */
+     
+    border: 10% solid cornflowerblue;
+    /* % for border don't work */
+
+    font-size: 100%;
+    /* calculated from parents' font size. */
+   
+
+    
+}

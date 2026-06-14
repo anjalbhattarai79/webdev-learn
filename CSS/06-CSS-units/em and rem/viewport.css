@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+section {
+    background-color: blueviolet;
+    width: 50vw;
+    padding: 10vw;
+    margin:10vw ;
+    border: 1vw solid green;
+    font-size: 2em ;
+    /* em for font-size is calculated based on parent's font-size */
+    /* 1 EM = FONT SIZE OF PARENT'S  */
+}
+
+.box {
+    background-color: chartreuse;
+    padding: 24px;   
+    font-size: 0.5em;
+    /* if parent set to 32px -- default for child is also 32 BECAUSE that is one defined as "em" */
+    padding: 0.5em;
+    /* 1 em for padding is set FONT-SIZE of own.; */
+    /* Samd for rem as well */
+
+    }
+
+    /* ##REM## 
+    *  it's unit value is defined by html/root's value as 1 rem !! 
+    *  default for html/root's is : 1 rem = 16px  */

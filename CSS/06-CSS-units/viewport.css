@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+section {
+    background-color: blueviolet;
+    width: 50vw;
+    /* vw = browser widht; not of body/ html */
+    width: 50vh;
+    /* YES !!; it sets value based on browser height */
+
+
+    /* height: 50vw ; */
+    /* BETTER , NEVER SET VALUE FOR HEIGHT : MIN-HEIGHT CAN BE CONSIDERED!! */
+
+    /* IT WORKS FOR margin , border and paddle on same way. */
+    /* works for font-size as well; better use it with --- other property like min-size && max-size for better responsive */
+}
+
+.box {
+    background-color: chartreuse;
+    width: 50%;
+    /* height given in percentage don't work unless parent has absolute value; */
+    padding: 10%;
+    /* padding calculated more Parent's " CONTENT-WIDTH " */
+    /* pecentage in MARGIN alson works like same  */
+
+    /* NEVER GIVE PADDING AND MARGIN IN PERCENTAGR */
+     
+    border: 10% solid cornflowerblue;
+    /* % for border don't work */
+
+    font-size: 100%;
+    /* calculated from parents' font size. */
+   box-sizing: border-box;
+
+    }
