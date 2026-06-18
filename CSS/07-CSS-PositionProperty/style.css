@@ -1,0 +1,67 @@
+ /* Different values for Positions
+ Static (default)
+ RELATIVE
+ ABSOLUTE
+ FIXED
+ STICKY 
+  
+ 
+  position = UNSET -- SET STATIC */
+
+/* left for browser is not normal - it's from his prespective  */
+/* semicolon is optional for last attribute */
+/* height of block element(div) increase automatically along content height*/
+/* top, bottom, left, right are available for all except static ie. position in CSS box model is introduced */
+/* If margin-top given, with position : relative --- it will mover around remaining intact with parent; position: absolute--- Not in intact */
+/* Overflow: scrollball <x-y direction> can be used. */
+/* Inset v/s Unset --- not related topics */
+
+div { 
+    position: relative;
+    /* Adds a new level in our CSS box model */
+    /* scroll bar available for left-right ; not for top-bottom */
+    
+
+    /* top overcomes bottom and left overcomes right if both applied */
+    inset: 5px;   
+    /* This set all 4 values for position */
+    /* WILL NOT MOVEEEEE; SUPPERIOR TOP - BOTTOM & LEFT -RIGHT DONT WORKS HERE */
+}
+ 
+
+ .css-element{
+    position: absolute;
+    background-color: aquamarine;
+    width: 300px;
+    /* occupied SPACE will be DELETED */
+    /* height of the parent in BOx-Model also decrease */
+    /* top, bottom, left, right are applied which shift away from viewport for absolute position. */
+    /* If, parents postion is NOT static, it will be shft away from  PARENTS' */
+    /* if parent is absolute and great- grand parent is RELATIVE ; that will be shifted from the   RELATIVE POSITION wala parent */
+    }
+
+    .js-element {
+      position: fixed;
+      /* Behaves like absolute, space not occupied */
+      /* DIFF? it is ALWAYSSSSSS attached to viewport */
+       background-color: darkorange;
+    }
+.html-element {
+   
+   position: sticky;
+   /* same like relative; space is still occupied */
+   background-color: darkkhaki;
+   /* DIFF? They don't move OUTSIDE PARENT on applying top, left, right , bottom  : Still position is seen in box model */
+   /*  but, if parent is going outside viewport -- it gets attached to viewport*/
+   /*       if parent went outside viewport- -- it also gets outside viewport */
+   /* VISUALIZE: it is used to creative navigation bar: which is always appear on website although we go scrolling down. */
+   /* position - fixed also help making navigation section */
+
+   /* Remember : They never go outside parent */
+}
+
+header {
+   background:greenyellow;
+   position: sticky;
+   top: 5px;
+}
