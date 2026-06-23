@@ -1,0 +1,27 @@
+.hi {
+    width: 95px;
+    height: 75px;
+    background-color: rgb(155, 168, 205);
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+
+
+    /* transform: translate(50%, 50%) scale(1.2) ; */
+    opacity: 0.9;
+    box-shadow: 1px 1px 13px rgba(201, 32, 32, 0.4);
+    text-shadow: 0px 0px 15px rgba(0,0,5, 0.4);
+
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/965/779/small/empty-top-wooden-table-and-sakura-flower-with-fog-and-morning-light-background-photo.jpg');
+    background-size: contain;
+    background-size: cover;
+    /* can be in pixel as well */
+    background-repeat: no-repeat;
+    transition: all 200ms;
+
+}
+
+.hi:hover {
+    transform: rotate(45deg) scale(1.5);
+}

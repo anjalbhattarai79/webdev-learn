@@ -1,0 +1,99 @@
+/*
+
+* Transform (scale, rotate, translate) --- ALL CAN BE DONE AT ONE LINE
+* opacity
+*Alpha channel
+*shadow (box, text)
+*transition.
+
+ */
+
+.box {
+ width: 100px;
+ height: 100px;
+background-color: rgb(0, 128, 17, 0.5);
+/* The a in rgba ---> Alpha Channel
+* Range = 0 -1 ; default 1
+
+* only background color is transparent
+*/
+
+
+
+        /* opacity: 0.5; */
+/* whole box class with background color and text color becomes transparent. */
+
+        /* transform: scale(2); */
+/* Occupied width will be still same
+* expand from center
+*/
+        /* transform-origin: 0 0; */
+/* expand from one corner side */
+
+       /* transform-origin: 100% 100%; */
+/* expand from other corner  */
+
+        transform: rotate(45deg);
+
+        /* transform: translateY(100px); */
+/* If given in %, it will move according to its width & height size for translateX and translateY respectively. */
+/* Margin would push the downward content but not this. */
+margin-top: 100px;
+
+        box-shadow: 0px 0px 9px 1px rgba(0,0,0, 0.4);
+/* first and second are x- axis, y- axis respectively
+* Third is BLUR RADIUS; not z axis 
+* Fourth (SPREAD RADIUS) increase extra: on both x and y direction.
+*/
+
+        text-shadow: 2px 3px rgba(201, 32, 32, 0.4);
+
+}
+
+/* MAKE A BOX IN CENTER OF BROWSER 
+* position : absolute [ free from occupied space]
+* left : 50% [starts from left at 50%, vertical line]
+* top : 50%
+* transfrom :translate (50%, 50%) [Alighn exactly to center; ]
+*/
+
+/* MAKE A BOX  IN CNETER OF GIVEN BOX */
+/* 
+* make parent position relative
+* put box into parent and give proper; top , left, position(absolute) , transfor: translate();
+*/
+
+
+
+/* BACKGROUND AND OTHER PROPERTIES */
+div {
+    position: relative;
+}
+.hi {
+    width: 95px;
+    height: 75px;
+    background-color: rgb(155, 168, 205);
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+
+
+    transform: translate(50%, 50%) scale(1.2) rotate(-45deg);
+    opacity: 0.9;
+    box-shadow: 1px 1px 13px rgba(201, 32, 32, 0.4);
+    text-shadow: 0px 0px 15px rgba(0,0,5, 0.4);
+
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/006/965/779/small/empty-top-wooden-table-and-sakura-flower-with-fog-and-morning-light-background-photo.jpg');
+    background-size: contain;
+    background-size: cover;
+    /* can be in pixel as well */
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+
+    /* IMPORTANT
+    If background and color set insted of background-color
+    = all other property of background don't work
+     */
+}
+
