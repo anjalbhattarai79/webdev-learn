@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(213,225,239);
+    min-height: 100vh;
+    font-family: cursive;
+    text-align: center;
+}
+
+.card {
+    height: 470px;
+    max-width: 302px;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    
+    /* Into center */
+    position: absolute;
+    margin: auto;
+    inset: 0;
+
+    /* alternate to make center --> Need to make body 100vh for this*/
+    /*
+    position: absolute;
+    margin: auto;
+    inset: 0; 
+     */
+
+    border-radius: 16px;
+    
+
+    box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.4);
+
+}
+img {
+    width: 100%;
+    border-radius: 16px;
+}
+h2 {
+
+    color: #1f3251;
+}
+p {
+    color: gray;
+}
