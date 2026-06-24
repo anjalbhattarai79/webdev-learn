@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+}
+* {
+    box-sizing: border-box;
+    /* However, this don't work for BORDER ?? */
+}
+
+ .parent {
+  /* padding: 10px;
+  border: 4px solid indianred; */
+
+display: flex;
+/* Every elements inside them become BLOCK; every block are now flexItems */
+ justify-content: center;
+ /* align-items: stretch;   */
+ /* default */
+ /* align-items: flex-start; */
+
+ align-items: center;
+}
+
+/* if i want for direct child ONLY   > is used. */
+.parent span {
+  /* border: 4px solid cadetblue;
+  width: 400px; */
+
+
+  background-color: peru;
+
+  /* flex-shrink: 0; */
+  /* flex-grow: 1; */
+  
+}   
+
+/* Descendent selector (inside paren) */
+.parent p {
+  /* border: 4px solid darkkhaki; */
+  /* width: max-content; */
+  /* makes it maximum width depending on its content */
+    /* width: min-content; */
+    /* Smaller it can be is the width size of largest word present */
+   
+     margin: 0;
+    /* Coz' block elements are provided with AUTO margin */
+
+    /* width: 600px; */
+    /* if width removed, content size is taken for calculatn */
+    background-color: darkkhaki;
+}
+
+.parent a {
+  /* border: 4px solid yellowgreen;
+  width: 500px; */
+  background-color: yellowgreen;
+
+  /* flex-shrink: 0; */
+  
+}
+
+
+
+
+ 
+/* 
+Flex-border starts only after from PADDING of Parent. 
+if browser size decrease, all flex items gets reduced at equal RATE
+CONTENT SIZE  ?
+  = width if all content +nt in a single line
+
+ flex shrink range = [0-1]  -- can't shrink than equic width = min-content
+ flex -grow = Gives the available space to that flex item
+   if 2 are provided with value 1; out of available free space both get equal amount 
+ 
+ GOING TO USE COMMONLY [for making div center]
+ display: flex
+ justify content:center;---related to HORIZONTAL
+ align items:centrer---related to VERTICAL
+ 
+   */
