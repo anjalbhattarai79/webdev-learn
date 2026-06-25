@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: inherit;
+    display: inline-block;
+    
+    border: whilte solid 2rem;
+    border-radius: 8px;
+
+}
+
+.card-container {
+    color: white;
+    padding: 1rem;
+    line-height: 1.75;
+    display: flex;
+}
+
+.card h2 {
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.card {
+    padding: 3rem;
+}
+
+
+.orange-card {
+    background-color: #E28525;
+    border-radius: 8px 8px 0 0 ;
+}
+.green-card {
+    background-color: #016972;
+}
+.darkgreen-card {
+    background-color: #00403F;
+    border-radius: 0 0 8px 8px ;
+}
